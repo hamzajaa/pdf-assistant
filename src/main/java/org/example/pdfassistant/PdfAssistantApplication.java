@@ -22,7 +22,6 @@ public class PdfAssistantApplication {
     public PdfAssistantApplication(EmbeddingStoreIngestor embeddingStoreIngestor) {
         this.embeddingStoreIngestor = embeddingStoreIngestor;
     }
-
     @PostConstruct
     public void init() {
         Document document = loadDocument(toPath("cassandra.pdf"), new ApachePdfBoxDocumentParser());
